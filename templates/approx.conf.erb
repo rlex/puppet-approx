@@ -4,52 +4,52 @@
 # MAIN CONFIG START
 <% if @cache -%>
 $cache <%= @cache %>
-<% else %>
+<% else -%>
 #$cache /srv/approx
 <% end -%>
 <% if @max_rate -%>
 $max_rate <%= @max_rate %>
-<% else %>
+<% else -%>
 #max_rate unlimited
 <% end -%>
 <% if @user -%>
 $user <%= @user %>
-<% else %>
+<% else -%>
 #$user approx
 <% end -%>
 <% if @group -%>
 $group <%= @group %>
-<% else %>
+<% else -%>
 #$group approx
 <% end -%>
 <% if @syslog -%>
 $syslog <%= @syslog %>
-<% else %>
+<% else -%>
 #syslog daemon
 <% end -%>
 <% if @pdiffs -%>
 $pdiffs <%= @pdiffs %>
-<% else %>
+<% else -%>
 #$pdiffs true
 <% end -%>
 <% if @offline -%>
 $offline <%= @offline %>
-<% else %>
+<% else -%>
 #$offline true
 <% end -%>
 <% if @max_wait -%>
 $max_wait <%= @max_wait %>
-<% else %>
+<% else -%>
 #$max_wait 10
 <% end -%>
 <% if @verbose -%>
 $verbose <%= @verbose %>
-<% else %>
+<% else -%>
 #$verbose true
 <% end -%>
 <% if @debug -%>
 $debug <%= @debug %>
-<% else %>
+<% else -%>
 #$debug false
 <% end -%>
 #MAIN CONFIG END
