@@ -13,17 +13,17 @@ Can be customized with following:
 
 ```puppet
 class { 'approx':
-  $cache = "/srv/approx/",
-  $max_rate = 10,
-  $max_redirects = 10,
-  $user = approx,
-  $group = approx,
-  $syslog = daemon,
-  $pdiffs = true,
-  $offline = false,
-  $max_wait = 10,
-  $verbose = false,
-  $debug = false,
+  $cache => "/srv/approx/",
+  $max_rate => 10,
+  $max_redirects => 10,
+  $user => approx,
+  $group => approx,
+  $syslog => daemon,
+  $pdiffs => true,
+  $offline => false,
+  $max_wait => 10,
+  $verbose => false,
+  $debug => false,
 ```
 All params except $cache is optional and undefined by default.
 
