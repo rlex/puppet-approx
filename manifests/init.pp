@@ -33,10 +33,6 @@ class approx (
     require   => Package[$approx_package],
   }
 
-  file { $approx_confdir:
-    ensure => 'directory',
-  }
-
   concat::fragment { 'approx-header':
     order   => '00',
     target  => $approx_conffile,
