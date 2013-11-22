@@ -1,6 +1,6 @@
 ### DESCRIPTION
 
-This is module for managing approx apt proxy mirror. 
+This is module for managing approx apt proxy mirror.  
 It supports every single option you can find in original config.
 
 ### DEPENDENCIES
@@ -8,7 +8,7 @@ It supports every single option you can find in original config.
 * puppetlabs/concat >= 1.0.0
 
 ### BASIC CLASS
-Will install approx with default options and without any mirrors. 
+Will install approx with default options and without any mirrors.  
 Can be customized with following:
 
 ```puppet
@@ -28,7 +28,7 @@ class { 'approx':
 All params except $cache is optional and undefined by default.
 
 ### MIRROR CLASS
-Will setup new mirror with specified origin.
+Will setup new mirror with specified origin.  
 Can be used several times for specifying several mirrors.
 
 ```puppet
