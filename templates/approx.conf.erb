@@ -2,17 +2,55 @@
 # ALL MANUAL CHANGES WILL BE OVERWRITTEN
 
 # MAIN CONFIG START
-cache          /srv/approx
-#$max_rate      unlimited
-#$max_redirects 5
-#$user          approx
-#$group         approx
-$syslog         daemon
-#$pdiffs        true
-#$offline       false
-#$max_wait      10
-#$verbose       true
-#$debug         true
-
+<% if @cache != '' -%>
+$cache <%= @cache %> 
+<% else %>
+#$cache /srv/approx
+<% end -%>
+<% if @max_rate != '' -%>
+$max_rate <%= @max_rate %>
+<% else %>
+#max_rate unlimited
+<% end -%>
+<% if @user != '' -%>
+$user <%= @user %>
+<% else %>
+#$user approx
+<% end -%>
+<% if @group != '' -%>
+$group <%= @group %>
+<% else %>
+#$group approx
+<% end -%>
+<% if @syslog != '' -%>
+$syslog <%= @syslog %>
+<% else %>
+#syslog daemon
+<% end -%>
+<% if @pdiffs != '' -%>
+$pdiffs <%= @pdiffs %>
+<% else %>
+#$pdiffs true
+<% end -%>
+<% if @offline != '' -%>
+$offline <%= @offline %>
+<% else %>
+#$offline true
+<% end -%>
+<% if @max_wait != '' -%>
+$max_wait <%= @max_wait %>
+<% else %>
+#$max_wait 10
+<% end -%>
+<% if @verbose != '' -%>
+$verbose <%= @verbose %>
+<% else %>
+#$verbose true
+<% end -%>
+<% if @debug != '' -%>
+$debug <%= @debug %>
+<% else %>
+#$debug false
+<% end -%>
 #MAIN CONFIG END
 
