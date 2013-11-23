@@ -24,6 +24,7 @@ class { 'approx':
   max_wait => 10,
   verbose => false,
   debug => false,
+}
 ```
 All params except $cache is optional and undefined by default.
 
