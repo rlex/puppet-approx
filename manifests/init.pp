@@ -27,10 +27,10 @@ class approx (
   }
 
   service { $approx_service:
-    ensure    => running,
-    name      => $approx_service,
-    enable    => true,
-    require   => Package[$approx_package],
+    ensure  => running,
+    name    => $approx_service,
+    enable  => true,
+    require => Package[$approx_package],
   }
 
   concat::fragment { 'approx-header':
