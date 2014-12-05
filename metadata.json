@@ -1,0 +1,32 @@
+{
+  "name": "lex-approx",
+  "version": "1.0.1",
+  "author": "Lex Rivera <me@lex.io>",
+  "license": "Creative Commons Attribution 3.0 Unported License",
+  "summary": "Puppet approx module",
+  "source": "https://github.com/rlex/puppet-approx",
+  "project_page": "(https://forge.puppetlabs.com/lex/approx)",
+  "issues_url": "https://github.com/rlex/puppet-approx/issues",
+  "tags": [ "dpkg", "deb", "aptitude", "apt", "ubuntu", "debian", "approx"],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Debian"
+    },
+    {
+      "operatingsystem": "Ubuntu"
+    }
+  ],
+  "requirements": [
+    {
+      "name": "pe",
+      "version_requirement": "3.2.x"
+    },
+    {
+      "name": "puppet",
+      "version_requirement": "3.x"
+    }
+  ],
+  "dependencies": [
+    { "name": "puppetlabs/concat", "version_requirement": ">= 1.0.0" }
+  ]
+}
